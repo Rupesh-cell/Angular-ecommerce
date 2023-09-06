@@ -1,0 +1,19 @@
+.card {
+  height: 400px;
+  margin:0.1px;
+  img {
+    height: 200px !important;
+    object-fit: contain;
+    .card-body {
+      height: 200px !important;
+    }
+    
+  }
+}
+.card-text {
+    height: 50px !important;
+    overflow: hidden;
+  }
+  .row > * {
+    padding: 5px;
+  }

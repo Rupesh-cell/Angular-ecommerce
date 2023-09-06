@@ -1,0 +1,53 @@
+/* ==========================================
+    FOR DEMO PURPOSE
+  ========================================== */
+body {
+  background: #2a2e32;
+}
+.navbar-brand{
+    color:rebeccapurple
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.formm {
+  width: 100%;
+
+  .form-control {
+    width: 100%;
+  }
+}
+
+.form-control:focus {
+  background: #cac6c6;
+}
+
+footer {
+  background: #212529;
+}
+
+/* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */
+body,
+html {
+  height: 100%;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
