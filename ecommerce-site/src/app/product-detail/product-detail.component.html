@@ -1,1 +1,16 @@
-<p>product-detail works!</p>
+<!-- src/app/product-detail/product-detail.component.html -->
+
+<div class="container">
+    <h2>{{ product.title }}</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img [src]="product.image" alt="{{ product.title }}" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <p>Description: {{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <button (click)="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
