@@ -1,6 +1,7 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand"><h1>Bazaar.com</h1></a>
+    <a class="navbar-brand" href=""><h1>Bazaar.com</h1></a>
+    <button class="nav-link" (click)="openCart()">Your Cart</button>
     <form class="form-inline formm">
       <input
         class="form-control mr-sm-2"
@@ -11,6 +12,7 @@
     </form>
   </div>
 </nav>
+
 <router-outlet></router-outlet>
 <div class="d-flex flex-column h-100">
   <!-- FOR DEMO PURPOSE -->

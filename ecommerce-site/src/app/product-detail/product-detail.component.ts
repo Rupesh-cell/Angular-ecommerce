@@ -3,7 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
-import { CartComponent } from '../cart/cart.component'; // Inject the CartComponent with its current name
+import { CartService } from '../cart.service'; // Inject the CartComponent with its current name
 
 @Component({
   selector: 'app-product-detail',
@@ -16,7 +16,7 @@ export class ProductDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private apiService: ApiService, // Inject your API service
-    private cartComponent: CartComponent // Inject the CartComponent with its current name
+    private cartService: CartService // Inject the CartComponent with its current name
   ) {}
 
   ngOnInit(): void {
@@ -31,6 +31,8 @@ export class ProductDetailComponent implements OnInit {
 
   // Add the selected product to the cart using methods from CartComponent
   addToCart() {
-    this.cartComponent.addToCart(this.product); // Use CartComponent's methods if they handle cart functionality
+    this.cartService.addToCart(this.product); // Use CartComponent's methods if they handle cart functionality
   }
 }
+
+

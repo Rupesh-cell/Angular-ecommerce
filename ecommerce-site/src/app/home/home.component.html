@@ -1,23 +1,25 @@
 <!-- src/app/home/home.component.html -->
 
 <div class="container">
-    <img class="img-b" src="../../assets/Group 403.svg">
-    <h1>Buy Now</h1>
-  
-    <div class="row">
-      <div class="col-md-4" *ngFor="let product of products">
-        <!-- Wrap the card in an anchor tag that links to the product detail route -->
-        <a [routerLink]="['/products', product.id]">
-          <div class="card">
-            <img [src]="product.image" class="card-img-top" alt="{{ product.title }}">
-            <div class="card-body">
-              <h5 class="card-title">{{ product.title }}</h5>
-              <p class="card-text">{{ product.description }}</p>
-              <p class="card-text">Price: ${{ product.price }}</p>
-            </div>
+  <img class="img-b" src="../../assets/Group 403.svg" />
+  <h1>Buy Now</h1>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let product of products">
+      <!-- Wrap the card in an anchor tag that links to the product detail route -->
+      <a [routerLink]="['/products', product.id]">
+        <div class="card">
+          <img
+            [src]="product.image"
+            class="card-img-top"
+            alt="{{ product.title }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text">Price: ${{ product.price }}</p>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   </div>
-  
+</div>
